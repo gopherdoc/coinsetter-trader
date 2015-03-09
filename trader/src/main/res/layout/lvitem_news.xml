@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/FaintGray">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/news_date"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Date"/>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/FaintGray"
+            tools:ignore="Overdraw"
+            android:weightSum="100">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_type"
+            android:textSize="16sp"
+            android:text="Type"
+            android:gravity="left"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/LightGrey"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:id="@+id/news_message"
+            android:text="Message"
+            android:gravity="left"
+            android:scrollHorizontally="false"
+            android:minLines="2"
+            android:ellipsize="none"
+            android:maxLines="100"
+            android:textSize="16sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/LightGrey"/>
+</LinearLayout>

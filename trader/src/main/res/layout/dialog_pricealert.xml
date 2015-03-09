@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="Price"
+            android:textSize="24sp"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radgroup_pricealert_condition">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crosses"
+                android:id="@+id/radio_crosses"
+                android:checked="true" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Greater than"
+                android:id="@+id/radio_gt"
+                android:enabled="false"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Less Than"
+                android:id="@+id/radio_lt"
+                android:enabled="false"/>
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/edittext_pricealert_target"
+            android:inputType="number"
+            android:gravity="bottom"
+            android:imeOptions="actionDone"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Notification Method"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:checked="true"
+            android:id="@+id/checkBox_pricealert_email" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="SMS"
+            android:checked="true"
+            android:id="@+id/checkBox_pricealert_sms"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/cancelback"
+            android:textColor="@color/white"
+            android:id="@+id/dialog_pricealert_cancel"
+            android:text="Cancel"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="3dp"
+            android:clickable="true"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:background="@drawable/balanceback"
+            android:textColor="@color/white"
+            android:id="@+id/dialog_pricealert_ok"
+            android:text="OK"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="3dp"
+            android:clickable="true"/>
+    </LinearLayout>
+</LinearLayout>

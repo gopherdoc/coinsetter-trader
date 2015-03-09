@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/FaintGray"
+    tools:ignore="Overdraw"
+    android:weightSum="100">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="80"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_pricealert_info"
+            android:gravity="center_vertical"
+            android:text="Alert:"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:clickable="false"/>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_pricealert_methods"
+            android:gravity="center_vertical"
+            android:text = "Method:"
+            android:textSize="12dp"
+            android:focusable="false"
+            android:clickable="false"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="20"
+        android:layout_height="match_parent"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/btn_pricealert_cancel"
+        android:background="@drawable/cancelback"
+        android:focusable="true"
+        android:clickable="true"/>
+</LinearLayout>

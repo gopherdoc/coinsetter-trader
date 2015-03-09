@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/FaintGray"
+    tools:ignore="Overdraw"
+    android:weightSum="100">
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:id="@+id/btcbalance"
+        android:text="@string/balance"
+        android:gravity="center_vertical|left"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:clickable="false"
+        android:textSize="18sp"
+        android:paddingLeft="15dp"
+        android:textIsSelectable="true" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="50"
+        android:id="@+id/usdbalance"
+        android:text="@string/balance"
+        android:gravity="center_vertical|left"
+        android:textStyle="bold"
+        android:focusable="false"
+        android:clickable="false"
+        android:textSize="18sp"
+        android:paddingLeft="15dp"
+        android:textIsSelectable="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/trade_btn"
+        android:gravity="center"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        android:text="@string/trade"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/balanceback"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/history_btn"
+        android:gravity="center"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        android:text="@string/history"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:focusable="true"
+        android:clickable="true"
+        android:background="@drawable/balanceback"/>
+</LinearLayout>
+

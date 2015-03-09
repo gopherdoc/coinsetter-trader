@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Coinsetter BTC Trader</string>
+    <string name="versionnum">Version 1.01</string>
+    <string name="title_activity_about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="label_settings">Settings</string>
+    <string name="donation">If you find this application useful, please feel free to donate using the links below.</string>
+    <string name="mybtcaddress">BTC: 1CLk9vZNAWW3Q54opZcrwD3jBsmBAEiue4</string>
+    <string name="myltcaddress">LTC: Ldt4cKBUSS4QoHBZvzwYqUENWM4f59B2nq</string>
+    <string name="thankyou">Thank you for using Coinsetter BTC Trader</string>
+    <string name="preference_file_key">myprefs</string>
+    <string name="amount">Amount</string>
+    <string name="price">Price</string>
+    <string name="basebal">Base Balance</string>
+    <string name="quotebal">Quote Balance</string>
+    <string name="sell">Sell</string>
+    <string name="buy">Buy</string>
+    <string name="prefusername">prefUsername</string>
+    <string name="prefpassword">prefPassword</string>
+    <string name="prefbtcaddress">prefbtcaddress</string>
+    <string name="splash_reminder">Thank you for using Coinsetter BTC Trader!\n\n
+    Security reminder:</string>
+    <string name="splash_helptext">1) PIN/Password required to securely store your credentials.</string>
+    <string name="QR">QR</string>
+    <string name="createdby">Created by Gopherdoc</string>
+    <string name="signup">Sign up</string>
+    <string name="loadingtrader">Loading Trader</string>
+    <string name="cancel">Cancel</string>
+    <string name="balance">Balance</string>
+    <string name="buysell">Buy/Sell</string>
+    <string name="date">Date</string>
+    <string name="quoteamount">Quote amount</string>
+    <string name="position">Position</string>
+    <string name="about">About</string>
+    <string name="QRcodeimg">QRCodeImage</string>
+    <string name="logo">Logo</string>
+    <string name="coinimg">Coin Image</string>
+    <string name="trade">Trade</string>
+    <string name="history">History</string>
+    <string-array name="nav_drawer_items">
+        <item>Accounts</item>
+        <item>Price Alerts</item>
+        <item>News</item>
+        <item>Settings</item>
+        <item>About</item>
+    </string-array>
+
+</resources>
